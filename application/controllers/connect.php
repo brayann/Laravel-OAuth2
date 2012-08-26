@@ -37,7 +37,8 @@ class Connect_Controller extends Base_Controller {
             }
 
             \Auth::login($user->id);
-            //return Redirect::to('dashboard'); //Redireciona para a área privada do sistema.
+
+            return Redirect::to('auth'); //Redireciona para a área privada do sistema.
 
         }
 
